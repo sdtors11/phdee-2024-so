@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{ECON7103HW2}
+\author{Sedat Ors}
+\date{29 January 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Python}
+\begin{enumerate}
+\item
+
+See Table \ref{tab:PQ1} 1 for regression results. There is a significant difference in electricity usage between the two groups.
+
+\begin{table}[ht]
+    \centering
+    \input{HW1py}
+    \caption{Regression results with heteroskedasticity-robust standard errors.}
+    \label{tab:PQ1}
+\end{table}
+
+\item 
+See Figure \ref{fig:histogram1} 1 for distribution of electricity usage for treated and control groups
+\vspace{0.5cm}
+
+\begin{figure}[]
+    \centering
+     \includegraphics{HW2pyf.pdf}
+    \caption{Electricity Usage}
+    \label{fig:histogram1}
+\end{figure}
+
+\item 
+\noindent See Table \ref{tab:question3a} 2 and Table \ref{tab:question3b} 3 for regression results
+ \begin{table}[]
+    \centering
+    \input{HW3apy)}
+    \caption{Regression Results for OLS}
+    \label{tab:question3a}
+\end{table}
+
+\vspace{0.5cm}
+\begin{table}[]
+    \centering
+    \input{HW3cPy)}
+    \caption{Regression Results for OLS}
+    \label{tab:question3b}
+\end{table}
+\end{enumerate}
+
+\section{Stata}
+\begin{enumerate}
+    \item 
+    
+\noindent See table \ref{tab:SQ1} 4
+\vspace{0.5cm}
+\begin{table}[h]
+    \centering
+     \includegraphics{HW2Q2.png}
+    \caption{\(t\)-test for Treatment, Control and Difference}
+    \label{tab:SQ1}
+\end{table}
+
+\item
+\noindent See table \ref{tab:SQ2} 5 
+\vspace{0.5cm}
+\begin{table}[]
+    \centering
+    \input{hw2Q3}
+    \caption{Regression results with heteroskedasticity-robust standard errors.}
+    \label{tab:SQ2}
+\end{table}
+
+\item
+\noindent See figure \ref{fig:SQ3} 2 
+\vspace{0.5cm}
+\begin{figure}[]
+    \centering
+    \includegraphics{HW2Q2.pdf}
+    \caption{Scatterplot of electricity usage and home size}
+    \label{fig:SQ3}
+\end{figure}
+\end{enumerate}
+\end{document}
