@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+
+\title{ECON7103HW4}
+\author{Sedat Ors}
+\date{12 February 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Python}
+\vspace{0.5cm}
+\begin{enumerate}
+\item 
+\noindent According to the Figure \ref{fig:question1} 1, there are parallel trends before treatment. 
+
+\begin{figure}[ht]
+    \centering
+     \includegraphics{hw4Q1.pdf}
+    \caption{The figure indicates average firm bycatch in pounds for each month in 2017 and 2018}
+    \label{fig:question1}
+\end{figure}
+
+\item The estimation is -9,591 which means that treatment leads decline in treatment group. 
+
+\item
+\noindent See Table \ref{tab:question3} 1 for results.
+\vspace{0.5cm}
+\begin{table}[ht]
+    \centering
+    \input{HW4Q3}
+    \caption{Regression results with heteroskedasticity-robust standard errors.}
+    \label{tab:question3}
+\end{table}
+
+
+\end{enumerate}
+
+\section{Stata}
+\vspace{0.5cm}
+\begin{enumerate}
+\item
+\noindent See Table \ref{tab:quesion4}  2 for results.
+\begin{table}[ht]
+    \centering
+    \input{table3}
+    \caption{Stata Results}
+    \label{tab:quesion4}
+\end{table}
+
+\end{enumerate}
+
+\end{document}
