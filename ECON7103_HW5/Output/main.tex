@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{ECON7103HW5}
+\author{Sedat Ors}
+\date{20 February 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Python}
+
+\begin{enumerate}
+
+\item The coefficient of mpg and constants are -22.2121 and 22482.7955, respectively. This means price will drop by 22.21 when mpg is increased 1 unit.
+
+\item There may be several reasons for endogeneity. For example car brand can be important, or the weights of the drivers or passengers can be important, or usage of type of fuel can also be important. 
+
+\item
+\begin{itemize}
+    \item a) See table \ref{tab:question3}, coloumn 1
+    \item b) See table \ref{tab:question3}, coloumn 2
+    \item c) See table \ref{tab:question3}, coloumn 3
+    \begin{table}[ht]
+  \centering
+    \input{HW5Q3}
+    \caption{2SLS results with 95\% confidence level}
+    \label{tab:question3}
+\end{table}
+  
+
+\item d) Exclusion in instrumental variable is  an assumption that a particular instrument used in the model is not directly related to the outcome variable, and is only related to the endogenous explanatory variables through the effect it has on the explanatory variables. The excluded instrument should influence price by mpg. These instruments seems not reasonable.
+
+\item e) The results of mpg is very similar in model 1 and model 2, and they are significant. However in model 3, the F statistic is not significant. we can say that height can not be a good IV. 
+
+\end{itemize}
+
+\item The coefficient of IV GMM is 150.43 and the standart error is 63.051 as lower CI is 26.856 and upper CI is 274. in model 1 and 2 the standart errors are 62.83 and 62.02, respectively. So they seem similar but, the interval is a bit higher. Therefore, we should use robust standart error. 
+
+\end{enumerate}
+
+\section{Stata}
+\begin{enumerate}
+\item See Table \ref{tab:my_image}
+
+\begin{table}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{table1.png}
+    \caption{LIML Regression results}
+    \label{tab:my_image}
+\end{table}
+
+
+\item The 5\% critical value is 37.418 and the F statistic is 94.05 in Table \ref{tab:my_image1}. Therefore, we can reject the H0 hypothesis that says the instrumental is weak.
+
+\begin{table}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{table3 (2).png}
+    \caption{Montiel-Pflueger results}
+    \label{tab:my_image1}
+\end{table}
+
+\end{enumerate}
+
+\end{document}
