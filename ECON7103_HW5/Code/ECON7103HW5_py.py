@@ -27,7 +27,7 @@ os.chdir(outputpath)
 random.seed(96333)
 np.random.seed(5659)
 
-data = pd.read_csv(r'/Users/sedators/Documents/GitHub/phdee-2023-db/homework5/instrumentalvehicles.csv')
+data = pd.read_csv(r'/Users/sedators/Documents/GitHub/phdee-2024-db/homework5/instrumentalvehicles.csv')
 
 #Q1 
 # Perform OLS regression
