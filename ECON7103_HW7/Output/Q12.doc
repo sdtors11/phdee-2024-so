@@ -1,0 +1,22 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx1872\clbrdrt\brdrs\cellx6048
+\ql \cell\qc (1)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx6048
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx6048
+\ql VARIABLES\cell\qc 2SLS Results: 2sls Estimator\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx6048
+\ql \cell\qc \cell\row
+\ql mpg\cell\qc 162.4***\cell\row
+\ql \cell\qc (35.14)\cell\row
+\ql car\cell\qc -4,778***\cell\row
+\ql \cell\qc (395.0)\cell\row
+\ql Constant\cell\qc 17,290***\cell\row
+\ql \cell\qc (1,009)\cell\row
+\ql \cell\qc \cell\row
+\ql Observations\cell\qc 1,000\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx6048
+\ql R-squared\cell\qc 0.092\cell\row
+\pard\qc
+Robust standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

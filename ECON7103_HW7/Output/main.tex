@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{ECON7103 HW7}
+\author{Sedat Ors}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+\section{Python}
+\vspace{0.5cm}
+\begin{enumerate}
+
+\item I think this is sharp RD. because the change in cutoff is dramatic and clear.
+
+\item According to the graph in Figure \ref{fig:Q2} below, there seems discontinuity after and below cutoff.
+\begin{figure}[ht]
+    \centering
+     \includegraphics{HW6Q2.pdf}
+    \caption{Scatterplot of mpg}
+    \label{fig:Q2}
+\end{figure}
+
+\item 
+
+See Figure \ref{tab:Q3}. 
+According to the result, the treatment leads reduction around 8.27 fuel efficiency per gallon at the cutoff. 
+
+\begin{figure}[ht]
+    \centering
+     \includegraphics{HW6Q3a.pdf}
+    \caption{Cutoff }
+    \label{tab:Q3}
+\end{figure}
+
+
+\item 
+See Figure \ref{fig:Q5}.
+According to the result, at cut off, fuel efficiency is decreased by 8.05.
+
+
+\item
+
+\begin{figure}[ht]
+    \centering
+     \includegraphics{HW6Q4a.pdf}
+    \caption{Cutoff - Second-order polynomial}
+    \label{fig:Q5}
+\end{figure}
+
+
+ See Figure \ref{fig:Q4}
+ Accordint to the result, at cut off, fuel efficiency is decreased by 7.44.
+
+
+\begin{figure}[]
+    \centering
+     \includegraphics{HW6Q5a.pdf}
+    \caption{}
+    \label{fig:Q4}
+\end{figure}
+
+\item According to the Table 1 below, the price is increases around 158\$, if level of mpg rise 1 unit.  
+\vspace{0.5cm}
+\begin{table}[ht]
+    \centering
+    \input{HW6Q6}
+    \caption{}
+    \label{tab:ta1}
+\end{table}
+
+
+\end{enumerate}
+
+\section{Stata}
+
+\begin{enumerate}
+
+\item 
+\begin{itemize}
+    \item a) According to Table 2 below, the average treatment effect is 162\$. 
+    \item b) See Figure 5
+\end{itemize}
+
+\begin{table}[ht]
+\centering
+\includegraphics[scale=0.9]{Table3.png}
+\caption{}
+\label{fig:}
+\end{table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{Table5.png}
+\caption{}
+\label{fig:}
+\end{figure}
+
+\vspace{0.5cm}
+\item 
+
+\vspace{0.5cm}
+
+The IV should be correlated with the endogenous variable of interest. In other words, the IV should be able to explain some of the variations in the treatment variable and IV should not be correlated with the error term in the outcome equation.
+
+I think mpg is statistically significant and according to the FSLS, the F value is bigger than 10. There is no endogeneity after 2SLS, we can say that this rd design is a good instrument.  
+ 
+
+\end{enumerate}
+\end{document}

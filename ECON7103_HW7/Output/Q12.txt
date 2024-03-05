@@ -1,0 +1,14 @@
+	(1)
+VARIABLES	2SLS Results: 2sls Estimator
+	
+mpg	162.4***
+	(35.14)
+car	-4,778***
+	(395.0)
+Constant	17,290***
+	(1,009)
+	
+Observations	1,000
+R-squared	0.092
+Robust standard errors in parentheses	
+*** p<0.01, ** p<0.05, * p<0.1	
