@@ -36,15 +36,15 @@ from rdd import rdd
 from statsmodels.graphics.regressionplots import abline_plot
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
 
-datapath = r'/Users/sedators/Documents/GitHub/phdee-2023-db/'
-outputpath = r'/Users/sedators/Documents/GitHub/phdee-2024-SO/ECON7103HW7/Output'
+datapath = r'/Users/sedators/Documents/GitHub/phdee-2024-db/'
+outputpath = r'/Users/sedators/Documents/GitHub/phdee-2024-so/ECON7103HW7/Output'
 
 os.chdir(outputpath)
 
 random.seed(96333)
 np.random.seed(5659)
 
-data = pd.read_csv(r'/Users/sedators/Documents/GitHub/phdee-2023-db/homework5/instrumentalvehicles.csv')
+data = pd.read_csv(r'/Users/sedators/Documents/GitHub/phdee-2024-db/instrumentalvehicles.csv')
 
 #Q2
 
