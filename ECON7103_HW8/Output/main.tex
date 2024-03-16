@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{multirow}
+\usepackage{longtable}
+
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{ECON7103HW7}
+\author{Sedat Ors}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Stata}
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+
+\item )
+
+\begin{itemize}
+
+\item a) The coefficient of treatment is  -.0654671, the robust standart error is .0013594 and the t-statistic value is -48.16. 
+\vspace{0.5cm}
+
+\item b) The coeeficient, the robust standart ettor and z core are  -.0679193, .0009147 and  -74.26 respectively.
+
+\vspace{0.5cm}
+
+\item c) One potential issue with the regression approach in part (a) is omitted variable bias, if there are important factors affecting both treatment assignment and the outcome that are not included in the model. Another issue is the potential for unobserved heterogeneity, if there are unmeasured differences between the treated and untreated groups that affect the outcome.
+
+\end {itemize}
+
+\item )
+\begin{itemize}
+
+\item a) The new coefficient is 0.02283, and the robust standart error is 0.02283. 
+
+\vspace{0.5cm}
+
+\item b) By adding an indicator for year of sample, equation (2) allows for the possibility that there are time-varying factors that affect both treatment assignment and the outcome, and that are not captured by the other variables in the model. This can help address the issue of omitted variable bias that was a potential concern in 1(c). Including a year indicator also allows for the possibility of different treatment effects in different years, which may be important if there are changes in the treatment or in the population over time. So this effects the treatment positively. 
+
+\end {itemize}
+
+
+\item )
+
+\begin{itemize}
+
+\item a) The new coefficient is -.0649855, the robust standart error is .0022493 and t value is -28.89.
+ 
+\vspace{0.5cm}
+
+\item b) The standard errors for the coefficient estimate from the nnmatch command might not be trustworthy if the matching process results in poor quality matches, such as if the matching variables are poorly chosen or if there is too much variation in the data. In this case, some variable are omitted. this can lead not good match and leads higher F statistics and standart error.
+
+\begin{table}[]
+    \centering
+    \input{ECON7103_HW8}
+    \caption{Caption}
+    \label{tab:HW8}
+\end{table}
+
+
+\end {itemize}
+\end {enumerate}
+\end{document}
