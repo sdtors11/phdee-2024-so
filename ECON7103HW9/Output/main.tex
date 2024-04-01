@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black,
+}
+\usepackage{natbib}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\title{ECON7103HW9}
+\author{Sedat Ors}
+\date{April 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Stata}
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+
+\item  See Figure \ref{fig:Q1}
+\begin{figure}[Ht]
+    \centering
+     \includegraphics{HWQ1.pdf}
+    \caption{A yearly plot of the recycling rate for NYC and the controls}
+    \label{fig:Q1}
+\end{figure}
+
+\item The average treatment effect is -.0619874 and its robust standard error is .0036695 
+
+\item  See Figure  \ref{fig:Q3}
+
+\begin{figure}[Ht]
+    \centering
+    \includegraphics[width=\textwidth]{HW9Q3.png}
+    \caption{Synthetic DID}
+    \label{fig:Q3}
+\end{figure}
+
+\item  See Figure \ref{fig:Q4}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{HW9Q4.pdf}
+    \caption{Event Study}
+    \label{fig:Q4}
+\end{figure}
+
+\item 
+
+\begin {itemize}
+\begin{enumerate}[label=\alph*)]
+ \item See Figure \ref{fig:Q5a}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{HW9Q5a.pdf}
+    \caption{Raw outcomes for treated and control groups over time}
+    \label{fig:Q5a}
+\end{figure}
+
+\item See Figure \ref{fig:Q5b1} and \ref{fig:Q5b2}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{HWQ5b1.pdf}
+    \caption{Raw outcomes for treated and synthetic control groups over time}
+    \label{fig:Q5b1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{HWQ5b2.pdf}
+    \caption{Estimated Synthetic controls effects over time}
+    \label{fig:Q5b2}
+\end{figure}
+
+\item See Figure \ref{fig:Q5c}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Q5c.pdf}
+    \caption{Estimated Synthetic controls effects and placebo effects over time}
+    \label{fig:Q5c}
+\end{figure}
+
+\item See Figure \ref{fig:Q5d}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Q5d.pdf}
+    \caption{Final Synthetic controls estimates}
+    \label{fig:Q5d}
+\end{figure}
+
+\end{enumerate}
+\end {itemize}
+\end{enumerate}
+
+\end{document}
